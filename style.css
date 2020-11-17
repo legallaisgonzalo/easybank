@@ -1,0 +1,375 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+
+}
+.navbar{
+    z-index: 1;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: black;
+    font-weight: 700;
+    padding: 0;
+    border-bottom: 4px solid rgb(27, 214, 37);
+}
+
+button{
+    height: 16px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+#boton{
+    color: white;
+}
+
+.hamburguer{
+    cursor: pointer;
+    background-color: black;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    content: '';
+
+}
+
+.hamburguer:after,
+.hamburguer:before{
+    background-color: black;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    content: '';
+    transform: translate(-10px);
+}
+
+.hamburguer::after{
+    top:-6px;
+}
+
+.hamburguer::before{
+    top: 6px;
+}
+.icon.navbar-toggler.navbar-brand.collapsed{
+    float: right;
+    position: absolute;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.icon.active{
+    transition: 2s;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    content: '';
+    color: black;
+}
+
+.icon.active .hamburguer:after{
+    top: 0;
+    transition: 3s;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    content: '';
+    color: black;
+    transform: rotate(50deg);
+}
+
+.icon.active .hamburguer::before{
+    top: 0;
+    transition: 3s;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    content: '';
+    color: black;
+    transform: rotate(130deg);
+}
+.icon.active .hamburguer{
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    transition: 0s;
+    height: 2px;
+    width: 20px;
+    content: '';
+    position: absolute;
+
+}
+
+.navbar.navbar-expand-lg{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    float: right;
+    width: 100%;
+    min-height: 50px;
+    max-height: 100%;
+}
+.collapse{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 5vh;
+    float: right;
+}
+header{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+    height: 600px;
+    width: auto;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: 700;
+}
+.header-row{
+    float: right;
+    position: absolute;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+
+.headerLeft{
+    transform: translateY(100px);
+    height: 250px;
+    padding: 30px;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+#mockups{
+    transform: translateY(-120px);
+    z-index: 1;
+}
+
+#desktop{
+    position: absolute;
+    transform: scale(2);
+    transform: translate(-200px, -250px);
+}
+
+main{
+    padding: 0;
+    background-color: hsl(220, 16%, 96%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    flex-direction: column;
+    
+}
+
+.mainTittle{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 200px;
+}
+
+footer{
+    background-color: hsl(233, 26%, 24%);
+    height:300px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+section{
+    background-color: hsl(0, 0%, 98%);
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.img-fluid{
+    border-radius: 4px;
+    margin: 2px;
+    background-color: white;
+}
+.bajo{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.imagen-baja{
+    padding: 0;
+    margin: 0;
+    transform: scale(0.82);
+    background-color: white;
+}
+
+.main-row{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.greenButton{
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 10px;
+    background:linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+.logoFooter{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer-b, .footer-c{
+    color: white;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.footer-a{
+    color: white;
+    flex-direction: row;
+}
+
+.copy{
+    font-size: 15px;
+}
+.footer{
+    color: white;
+    list-style: none;
+}
+.headerup{
+    display: none;
+
+}
+
+#mockupsmobile{
+    transform: translateY(-95px);
+    height: 400px;
+}
+
+
+@media screen and (max-width: 800px){
+        .main-row,main{
+            height:auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+         .mainTittle{
+            height:auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+    }
+}
+@media screen and (max-width: 800px){
+        .imagen-baja{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 800px){
+        footer,.footer-b, .footer-c, .footer-d,.tittle-footer{
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;{
+            padding: 5px;
+            }
+        }
+        .headerup{
+            background: url(images/bg-intro-mobile.svg);
+
+            margin: 0;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+        .headerRight{
+            display: none;
+        }
+        .headerLeft{
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transform: translateY(-20px);
+
+        }
+}
+
+
+
