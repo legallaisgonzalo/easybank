@@ -180,7 +180,7 @@ h2{
 }
 
 #mockups{
-    transform: translateY(0px);
+    transform: translateY(-110px);
     z-index: 1;
 }
 
@@ -341,20 +341,16 @@ section{
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 100%;{
-            padding: 5px;
-            }
-        }
+            width: 100%;
+            padding: 5px;}
         .headerup{
             background: url('images/bg-intro-mobile.svg');
             margin: 0;
             display: block;
             background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .headerRight{
-            display: none;
-        }
+            background-size: cover;}
+        .headerRight,#upgreenbutton{
+            display: none;        }
         .headerLeft{
             list-style: none;
             justify-content: center;
