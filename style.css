@@ -24,6 +24,12 @@ a:hover{
     padding: 0;
 }
 
+.footer:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
 button{
     height: 16px;
     width: 52px;
@@ -266,10 +272,10 @@ section{
     background:linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
 .logoFooter{
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    color: white;
+    filter: invert(30%);
 }
 .footer-b, .footer-c{
     color: white;
