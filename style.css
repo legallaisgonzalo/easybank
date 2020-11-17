@@ -14,12 +14,14 @@ body{
 
 a{
     color: black;
+    padding: 0;
 }
 
 a:hover{
     color: black;
     font-weight: 700;
     border-bottom: 4px solid rgb(27, 214, 37);
+    padding: 0;
 }
 
 button{
@@ -148,12 +150,12 @@ header{
     margin: 0;
     padding: 0;
     background-color: hsl(0, 0%, 98%);
-    height: 600px;
     width: auto;
     list-style: none;
     justify-content: center;
     text-align: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 h2{
@@ -178,7 +180,7 @@ h2{
 }
 
 #mockups{
-    transform: translateY(-120px);
+    transform: translateY(0px);
     z-index: 1;
 }
 
@@ -344,14 +346,11 @@ section{
             }
         }
         .headerup{
-            background: url(images/bg-intro-mobile.svg);
-            max-width: 375px;
+            background: url('images/bg-intro-mobile.svg');
             margin: 0;
             display: block;
             background-repeat: no-repeat;
             background-size: cover;
-            
-
         }
         .headerRight{
             display: none;
