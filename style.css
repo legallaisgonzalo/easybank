@@ -79,9 +79,9 @@ button{
     float: right;
     position: absolute;
     height: auto;
-    display: flex;
     flex-direction: row;
     text-align: center;
+    display: none;
 
 }
 
